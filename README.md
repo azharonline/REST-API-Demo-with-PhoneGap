@@ -30,11 +30,11 @@ This folder contains the platform specific builds for Android and iOS. This fold
 
     phonegap platform add android
 
-Executing the above line in Terminal(for Mac) and in command line for Windows will add the Android platform and Android specific files to our project. More on this later.
+Executing the above line in Terminal(for Mac) and in command line for Windows will add the Android platform and Android specific files to our project.
 
     phonegap platform add ios
 
-Executing the above line in Terminal(for Mac) and in command line for Windows will add the iOS platform and iOS specific files to our project. More on this later.
+Executing the above line in Terminal(for Mac) and in command line for Windows will add the iOS platform and iOS specific files to our project.
 
 #### plugins folder
 
@@ -68,6 +68,30 @@ This file contains all the configuration of the project. It contains the Widget 
 In the index.js file under www/js, we will add the API call under onDeviceReady function. The onDeviceReady function is where the command will come after the device has been initialized with all the dependencies. 
 
 In this example, we use something called as XMLHttpRequests. These are asynchronous requests, which means that the request is made to the server and then the command continues executing the next line of code without waiting for the response of the server. When the server responds, it triggers an onreadystatechange function, where we write code to receive the response from the server and handle the response accordingly. Go through the code and most of it can be understood pretty easily. Just remember to skip the other functions and concentrate only on what is within onDeviceReady function.
+
+## Executing this project
+
+#### Android 
+This project already comes with the platform files and hence you only need to run the command:
+
+    phonegap run android command
+
+in the command line to execute the app, considering your phone is connected and you have Android SDK properly installed. 
+
+#### iOS 
+
+To run this project on iOS, first run this command:
+
+    phonegap platform add ios
+
+then run this command:
+
+    phonegap build ios
+
+Now, navigate to the iOS folder under platforms folder and find the XCode project there. Open the Xcode project and run the project from XCode on an iOS device. As XCode is only available on MacOS and OSX, you need to have a Mac or a machine running MacOS or OSX. Note that you may also need relevant certificates and permissions to run it on an iPhone.
+
+
+
 
 [phonegap-cli-url]: http://github.com/phonegap/phonegap-cli
 [cordova-app]: http://github.com/apache/cordova-app-hello-world
