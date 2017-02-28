@@ -49,13 +49,13 @@ var app = {
                         if (xmlhttp.readyState == 4) {
                             if (xmlhttp.status == 200) {
                                 console.log("Server success callback");
-                                alert(xmlhttp.responseText);
-                                console.log(xmlhttp.responseText);
+                                alert("Received the data from remote web server! The data received is : " + xmlhttp.responseText);
+                                console.log("Received the data from remote web server! The data received is : " + xmlhttp.responseText);
                                 //Tip: Connect your Android device(version 4.2 and higher) and type this in Chrome browser to be able to inspect your app: chrome://inspect/#devices
                             } else if (xmlhttp.status == 400) {
                                 console.log("Server responded with 400 Bad Request error. Means there was an error with your request and server couldn't understand it!");
                             } else {
-                                console.log("");
+                                console.log("Some other error.");
                             }
                         }
                     };
