@@ -1,6 +1,6 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# Hello World Phonegap Project with API Call [![bitHound Score][bithound-img]][bithound-url]
 
-A PhoneGap Hello World template with REST API Integration
+This is a basic app demonstrating the use of a REST API with Phonegap using plain old vanilla Javascript(no libraries or frameworks).
 
 ## Usage
 
